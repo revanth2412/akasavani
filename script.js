@@ -22,24 +22,24 @@ async function checkweather(city){
     document.querySelector(".search input").value='';
 
     if(data.weather[0].main == "Clouds"){
-        weatherIcon.src="images/clouds.png"
+        weatherIcon.src="clouds.png"
         document.querySelector(".card").style.background="linear-gradient(135deg,  purple, rgb(83, 52, 83))"
     }
     else if(data.weather[0].main == "Clear"){
-        weatherIcon.src="images/Clear.png"
+        weatherIcon.src="Clear.png"
         document.querySelector(".card").style.background="linear-gradient(135deg, yellow,white)"
 
     }
     else if(data.weather[0].main == "Rain"){
-        weatherIcon.src="images/Rain.png"
+        weatherIcon.src="Rain.png"
         document.querySelector(".card").style.background="linear-gradient(155deg, purple,blue)"
 
     } else if(data.weather[0].main == "Drizzle"){
-        weatherIcon.src="images/Drizzle.png"
+        weatherIcon.src="Drizzle.png"
         document.querySelector(".card").style.background="linear-gradient(135deg, cyan,blue)"
     }
     else if(data.weather[0].main == "Mist"){
-        weatherIcon.src="images/Mist.png"
+        weatherIcon.src="Mist.png"
         document.querySelector(".card").style.background="linear-gradient(135deg, cyan,blue)"
         document.querySelector(".card").style.opacity="0.3";
     }
