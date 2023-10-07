@@ -24,19 +24,23 @@ async function checkweather(city){
     if(data.weather[0].main == "Clouds"){
         weatherIcon.src="clouds.png"
         document.querySelector(".card").style.background="linear-gradient(135deg,  purple, rgb(83, 52, 83))"
+        document.querySelector(".card").style.opacity="1";
     }
     else if(data.weather[0].main == "Clear"){
         weatherIcon.src="clear.png"
         document.querySelector(".card").style.background="linear-gradient(180deg, yellow,blue)"
+        document.querySelector(".card").style.opacity="1";
 
     }
     else if(data.weather[0].main == "Rain"){
         weatherIcon.src="rain.png"
         document.querySelector(".card").style.background="linear-gradient(155deg, purple,blue)"
+        document.querySelector(".card").style.opacity="1";
 
     } else if(data.weather[0].main == "Drizzle"){
         weatherIcon.src="drizzle.png"
         document.querySelector(".card").style.background="linear-gradient(135deg, cyan,blue)"
+        document.querySelector(".card").style.opacity="1";
     }
     else if(data.weather[0].main == "Mist"){
         weatherIcon.src="mist.png"
