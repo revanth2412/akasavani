@@ -25,9 +25,9 @@ async function checkweather(city){
         weatherIcon.src="clouds.png"
         document.querySelector(".card").style.background="linear-gradient(135deg,  purple, rgb(83, 52, 83))"
     }
-    else if(data.weather[0].main == "Clear"){
+    else if(data.weather[0].main == "clear"){
         weatherIcon.src="Clear.png"
-        document.querySelector(".card").style.background="linear-gradient(135deg, yellow,white)"
+        document.querySelector(".card").style.background="linear-gradient(180deg, yellow,blue)"
 
     }
     else if(data.weather[0].main == "Rain"){
