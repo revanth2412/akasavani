@@ -25,21 +25,21 @@ async function checkweather(city){
         weatherIcon.src="clouds.png"
         document.querySelector(".card").style.background="linear-gradient(135deg,  purple, rgb(83, 52, 83))"
     }
-    else if(data.weather[0].main == "clear"){
-        weatherIcon.src="Clear.png"
+    else if(data.weather[0].main == "Clear"){
+        weatherIcon.src="clear.png"
         document.querySelector(".card").style.background="linear-gradient(180deg, yellow,blue)"
 
     }
     else if(data.weather[0].main == "Rain"){
-        weatherIcon.src="Rain.png"
+        weatherIcon.src="rain.png"
         document.querySelector(".card").style.background="linear-gradient(155deg, purple,blue)"
 
     } else if(data.weather[0].main == "Drizzle"){
-        weatherIcon.src="Drizzle.png"
+        weatherIcon.src="drizzle.png"
         document.querySelector(".card").style.background="linear-gradient(135deg, cyan,blue)"
     }
     else if(data.weather[0].main == "Mist"){
-        weatherIcon.src="Mist.png"
+        weatherIcon.src="mist.png"
         document.querySelector(".card").style.background="linear-gradient(135deg, cyan,blue)"
         document.querySelector(".card").style.opacity="0.3";
     }
